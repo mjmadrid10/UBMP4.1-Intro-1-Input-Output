@@ -67,8 +67,15 @@ int main(void)
  * 1. How many times do the LEDs flash if SW2 is quickly pressed and released?
  *    Do the LEDs keep flashing when SW2 is held? Look at the program and
  *    explain why this happens when SW2 is held.
- * 
+ 
+ If SW2 is quickly pressed, the LEDs flash 4 times. This happens because it is in a while loop where while SW2 is being pressed quickly, it flashes 4 LEDS once going clockwise.
+ If the button of SW2 was held, the 4 LEDs will countinously keep flashing in a clockwise direction until your finger leaves the button. This happens because the while loop will keep running as long as SW2 is being pressed.
+ 
+ 
  * 2. Explain the difference between the statements: LED3 = 0; and LED3 = 1;
+ 
+ LED3 = 0 means that the LED is off. LED3 = 1 means that the LED is turned on.
+ 
  * 
  * 3. What voltage do you expect the microcontroller to output to LED D3 when
  *    the statement LED3 = 0; runs? What voltage do you expect the output to be
